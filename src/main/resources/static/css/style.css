@@ -9,12 +9,16 @@
 nav {
 	height: 90px;
 	color: #ffffff;
-	text-transform: uppercase; 
+	text-transform: uppercase;
 }
 
 a {
 	cursor: pointer;
 	font-weight: bold;
+}
+
+a.btn-nav:hover {
+	color: #ba68c8;
 }
 
 .neo-section {
@@ -100,7 +104,6 @@ a {
 	.wm {
 		width: 100%;
 	}
-	
 	nav {
 		height: 100%;
 	}
