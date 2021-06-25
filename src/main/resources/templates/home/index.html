@@ -1,18 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
-
 <head>
-
 <meta charset="ISO-8859-1">
-<meta name="viewport" content="width=width-device, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
 
 <title>Projeto Academy</title>
-<meta name="author" content="ArthurPrestes">
 
+<meta name="author" content="ArthurPrestes">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://kit.fontawesome.com/006642858d.js"></script>
+<link
+	href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&family=Ubuntu&family=Work+Sans&display=swap"
+	rel="stylesheet">
 </head>
 <body>
 
-	<p>Olá Mundo Spring</p>
+	<header>
+
+		<nav class="navbar navbar-expand-lg navbar-dark"
+			style="background-color: #4527a6">
+
+			<a class="navbar-brand" href="#">
+			 <img src="img/logo_header-site.png" witdth="200px" />
+				</a>
+				
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navMobile" class="navbar-collapse collapse justify-content-end">
+
+				<a class="nav-item nav-link"><i class="fas fa-home"></i> Home</a> 
+				<a class="nav-item nav-link"><i class="fas fa-user-graduate"></i> Cadastrar aluno</a> 
+				<a class="nav-item nav-link"><i class="fas fa-search"></i> Pesquisar aluno</a> 
+				<a class="nav-item nav-link btn-danger"><i class="fas fa-times"></i> sair</a>
+
+			</div>
+
+		</nav>
+
+	</header>
+	
+	<section class="neo-section" style="background-image: url('img/bg-index.jpg');">
+	
+	<div class="shadow"></div>
+	
+	<div class="center neo-container">
+		<h1 class= "center-text">Sistema de Gerencimento de Alunos</h1>
+		
+	
+	<div class="buttons">
+	
+		<div class="wm">
+			<h5 class="btn">Cadastrar Aluno</h5>
+		</div>
+	
+		<div class="wm">
+			<h5 class="btn justify-content-center">Encontrar Aluno</h5>
+		</div>
+	
+		<div class="clear"></div>
+		
+	</div>
+	</div>
+	</section>
+
+	<footer>
+	
+	<div class="baseboard">
+		<span>Todos os Direitos Reservados - 2021 &copy; Arthur Prestes</span>
+	</div>
+	
+	</footer>
+
+	<script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>
