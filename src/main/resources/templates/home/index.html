@@ -17,31 +17,7 @@
 </head>
 <body>
 
-	<header>
-
-		<nav class="navbar navbar-expand-lg navbar-dark"
-			style="background-color: #4527a6">
-
-			<a class="navbar-brand" href="#">
-			 <img src="img/logo_header-site.png" witdth="200px" />
-				</a>
-				
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div id="navMobile" class="navbar-collapse collapse justify-content-end">
-
-				<a class="btn-nav nav-item nav-link"><i class="fas fa-home"></i> Home</a> 
-				<a class="btn-nav nav-item nav-link"><i class="fas fa-user-graduate"></i> Cadastrar aluno</a> 
-				<a class="btn-nav nav-item nav-link"><i class="fas fa-search"></i> Pesquisar aluno</a> 
-				<a class="btn-nav nav-item nav-link btn-danger"><i class="fas fa-times"></i> sair</a>
-
-			</div>
-
-		</nav>
-
-	</header>
+	<div th:replace = "fragmentos/fragmentos :: header"></div>
 	
 	<section class="neo-section" style="background-image: url('img/bg-index.jpg');">
 	
@@ -67,13 +43,7 @@
 	</div>
 	</section>
 
-	<footer>
-	
-	<div class="baseboard">
-		<span>Todos os Direitos Reservados - 2021 &copy; Arthur Prestes</span>
-	</div>
-	
-	</footer>
+		<div th:replace="fragmentos/fragmentos :: footer"></div>
 
 	<script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
 	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
