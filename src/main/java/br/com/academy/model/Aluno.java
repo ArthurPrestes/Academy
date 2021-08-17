@@ -1,9 +1,14 @@
 package br.com.academy.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import br.com.academy.Enums.Curso;
+import br.com.academy.Enums.Status;
+
 
 @Entity
 public class Aluno {
@@ -11,13 +16,17 @@ public class Aluno {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer aluno;
 	
+	@Column(name = "nome")
 	private String nome;
 	
-	private Enum curso;
+	@Column(name = "curso") 
+	private Curso curso;
 	
+	@Column(name = "matricula")
 	private String matricula;
 	
-	private Enum status;
+	@Column(name = "status")
+	private Status status;
 	
 	private String turno;
 
@@ -36,12 +45,13 @@ public class Aluno {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-	public Enum getCurso() {
+	
+	
+	public Curso getCurso() {
 		return curso;
 	}
 
-	public void setCurso(Enum curso) {
+	public void setCurso(Curso curso) {
 		this.curso = curso;
 	}
 
@@ -52,12 +62,14 @@ public class Aluno {
 	public void setMatricula(String matricula) {
 		this.matricula = matricula;
 	}
+	
+	
 
-	public Enum getStatus() {
+	public Status getStatus() {
 		return status;
 	}
 
-	public void setStatus(Enum status) {
+	public void setStatus(Status status) {
 		this.status = status;
 	}
 
